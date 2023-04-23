@@ -25,11 +25,11 @@ def display_hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def display_ctext():
+def display_ctext(text_to_display):
     """
     display “C ” followed by the value of the text
     """
-    return "C {}".format(text.replace("_", " "))
+    return "C {}".format(text_to_display.replace("_", " "))
 
 
 if __name__ == "__main__":
